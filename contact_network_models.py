@@ -199,7 +199,7 @@ def filter_diagrams(diagrams, epsilon):
 
 function_map = {
         "assort_mixing": assort_mixing,
-        "dissasort_mixing": disassort_mixing}
+        "disassort_mixing": disassort_mixing}
 
 def syn_single(v,e,g1_params,g2_params,g3_params,per,diag_filter,dim0wt,dim1wt,dim2wt):
     # g_params = (p,q,xi,d_max,mixing_function)
