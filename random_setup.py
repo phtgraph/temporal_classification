@@ -37,7 +37,6 @@ def svm_output(mat_train,mat_test,y_train,y_test):
     svm_classifier.fit(mat_train, y_train)
 
     accuracy = svm_classifier.score(mat_test, y_test)
-    print("Accuracy using SVM : ", accuracy)
     return accuracy
 
 def compute_kernel_matrix():
