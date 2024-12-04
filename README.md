@@ -11,4 +11,5 @@
 
 ## Contact Network Models and Random Temporal Graphs
 
-Add your graph classification parameters in the `config.json` file. Some sample parameters are added, with variable descriptions.
+1. Add your graph classification parameters in the `config.json` file. Some sample parameters are added, with variable descriptions.
+2. Run the script `run_exp.py`.
