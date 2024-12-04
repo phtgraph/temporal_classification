@@ -1,17 +1,17 @@
 {
-    "random_exp_pure": {
+    "random_exp_pure": {     # For random temporal graph experiment with pure classes.
         "parameters": [
             {
-                "v": 20,
-                "e": 40,
-                "cp": 0.1,
-                "wp": 0.05,
-                "n_cluster": 3,
-                "n_copies": 50,
-                "diag_filter": 0.01,
-                "dim0wt": 1.0,
-                "dim1wt": 0.5,
-                "dim2wt": 0.2
+                "v": 20,                # Number of vertices
+                "e": 40,                # Number of edges
+                "cp": 0.1,              # Class perturbation  
+                "wp": 0.05,             # Within class perturbation
+                "n_cluster": 3,         # Number of classes
+                "n_copies": 50,         # Number of graphs in each class
+                "diag_filter": 0,       # Threshold to ignore lower persistence points
+                "dim0wt": 1.0,          # Weight of persistence dimension 0 kernel matrix
+                "dim1wt": 1.0,          # Weight of persistence dimension 1 kernel matrix
+                "dim2wt": 1.0           # Weight of persistence dimension 2 kernel matrix
             },
             {
                 "v": 20,
@@ -20,27 +20,27 @@
                 "wp": 0.1,
                 "n_cluster": 4,
                 "n_copies": 30,
-                "diag_filter": 0.05,
-                "dim0wt": 0.8,
-                "dim1wt": 0.7,
-                "dim2wt": 0.3
+                "diag_filter": 0,
+                "dim0wt": 1.0,
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
             }
         ]
     },
-    "random_exp_mixed": {
+    "random_exp_mixed": {     # For random temporal graph experiment with mixed classes.
         "parameters": [
             {
                 "v": 20,
                 "e": 40,
                 "cp": 0.1,
                 "wp": 0.05,
-                "n_cluster_1": 3,
-                "n_cluster_2": 3,
+                "n_cluster_1": 3,        # Number of classes using 1st graph
+                "n_cluster_2": 3,        # Number of classes using 2nd graph
                 "n_copies": 50,
-                "diag_filter": 0.01,
+                "diag_filter": 0,
                 "dim0wt": 1.0,
-                "dim1wt": 0.5,
-                "dim2wt": 0.2
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
             },
             {
                 "v": 20,
@@ -50,66 +50,66 @@
                 "n_cluster_1": 4,
                 "n_cluster_2": 3,
                 "n_copies": 30,
-                "diag_filter": 0.05,
-                "dim0wt": 0.8,
-                "dim1wt": 0.7,
-                "dim2wt": 0.3
+                "diag_filter": 0,
+                "dim0wt": 1.0,
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
             }
         ]
     },
-    "contact_network_single": {
+    "contact_network_single": {        # For single labelled synthetic contact networks
+        "parameters": [
+            {
+                "v": 50,                                    # Number of vertices
+                "e": 100,                                   # Number of edges
+                "g1_params": [0.7,0.5,5,"assort_mixing"],   # Parameters for the root graph of a class. [p, x_i, d_max, "assort_mixing"/"disassort_mixing"]
+                "g2_params": [0.7,0.5,5,"assort_mixing"],
+                "g3_params": [0.7,0.5,5,"assort_mixing"],
+                "per": 25,                                  # Number of RE perturbations
+                "diag_filter": 0,
+                "dim0wt": 1.0,
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
+            },
+            {
+                "v": 50,
+                "e": 100,
+                "g1_params": [0.7,0.5,5,"disassort_mixing"],
+                "g2_params": [0.7,0.5,5,"disassort_mixing"],
+                "g3_params": [0.7,0.5,5,"disassort_mixing"],
+                "per": 25,
+                "diag_filter": 0,
+                "dim0wt": 1.0,
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
+            }
+        ]
+    },
+    "contact_network_multi": {        # For single labelled synthetic contact networks
         "parameters": [
             {
                 "v": 20,
                 "e": 40,
-                "g1_params": [0.7,0.5,5,"assort_mixing"],
-                "g2_params": [0.7,0.5,5,"assort_mixing"],
-                "g3_params": [0.7,0.5,5,"assort_mixing"],
+                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"],    # Parameters for the root graph of a class. [p, q, x_i, d_max, "assort_mixing"/"disassort_mixing"]
+                "g2_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "g3_params": [0.7,0.2,0.5,5,"assort_mixing"],
                 "per": 25,
-                "diag_filter": 0.01,
+                "diag_filter": 0,
                 "dim0wt": 1.0,
-                "dim1wt": 0.5,
-                "dim2wt": 0.2
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
             },
             {
                 "v": 20,
                 "e": 40,
-                "g1_params": [0.7,0.5,5,"assort_mixing"],
-                "g2_params": [0.7,0.5,5,"assort_mixing"],
-                "g3_params": [0.7,0.5,5,"assort_mixing"],
+                "g1_params": [0.7,0.2,0.5,5,"disassort_mixing"],
+                "g2_params": [0.7,0.2,0.5,5,"disassort_mixing"],
+                "g3_params": [0.7,0.2,0.5,5,"disassort_mixing"],
                 "per": 25,
-                "diag_filter": 0.01,
+                "diag_filter": 0,
                 "dim0wt": 1.0,
-                "dim1wt": 0.5,
-                "dim2wt": 0.2
-            }
-        ]
-    },
-    "contact_network_multi": {
-        "parameters": [
-            {
-                "v": 20,
-                "e": 40,
-                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"],
-                "g2_params": [0.7,0.2,0.5,5,"assort_mixing"],
-                "g3_params": [0.7,0.2,0.5,5,"assort_mixing"],
-                "per": 25,
-                "diag_filter": 0.01,
-                "dim0wt": 1.0,
-                "dim1wt": 0.5,
-                "dim2wt": 0.2
-            },
-            {
-                "v": 20,
-                "e": 40,
-                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"],
-                "g2_params": [0.7,0.2,0.5,5,"assort_mixing"],
-                "g3_params": [0.7,0.2,0.5,5,"assort_mixing"],
-                "per": 25,
-                "diag_filter": 0.01,
-                "dim0wt": 1.0,
-                "dim1wt": 0.5,
-                "dim2wt": 0.2
+                "dim1wt": 1.0,
+                "dim2wt": 1.0
             }
         ]
     }
