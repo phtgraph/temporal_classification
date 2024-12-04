@@ -1,17 +1,30 @@
 {
-    "random_exp_pure": {     # For random temporal graph experiment with pure classes.
+    "random_exp_pure": {
+        "_comments": {
+                "description": "For random temporal graph experiment with pure classes.",
+                "v": "Number of vertices",
+                "e": "Number of edges",
+                "cp": "Class perturbation",
+                "wp": "Within class perturbation",
+                "n_cluster": "Number of classes",
+                "n_copies": "Number of graphs in each class",
+                "diag_filter": "Threshold to ignore lower persistence points",
+                "dim0wt": "Weight of persistence dimension 0 kernel matrix", 
+                "dim1wt": "Weight of persistence dimension 1 kernel matrix",
+                "dim2wt": "Weight of persistence dimension 2 kernel matrix"
+            },     
         "parameters": [
             {
-                "v": 20,                # Number of vertices
-                "e": 40,                # Number of edges
-                "cp": 0.1,              # Class perturbation  
-                "wp": 0.05,             # Within class perturbation
-                "n_cluster": 3,         # Number of classes
-                "n_copies": 50,         # Number of graphs in each class
-                "diag_filter": 0,       # Threshold to ignore lower persistence points
-                "dim0wt": 1.0,          # Weight of persistence dimension 0 kernel matrix
-                "dim1wt": 1.0,          # Weight of persistence dimension 1 kernel matrix
-                "dim2wt": 1.0           # Weight of persistence dimension 2 kernel matrix
+                "v": 20,                 
+                "e": 40,                 
+                "cp": 0.1,             
+                "wp": 0.05,           
+                "n_cluster": 3,       
+                "n_copies": 50,      
+                "diag_filter": 0,    
+                "dim0wt": 1.0,      
+                "dim1wt": 1.0,      
+                "dim2wt": 1.0    
             },
             {
                 "v": 20,
@@ -27,15 +40,29 @@
             }
         ]
     },
-    "random_exp_mixed": {     # For random temporal graph experiment with mixed classes.
+    "random_exp_mixed": {
+        "_comments": {
+                "description": "For random temporal graph experiment with mixed classes.",
+                "v": "Number of vertices",
+                "e": "Number of edges",
+                "cp": "Class perturbation",
+                "wp": "Within class perturbation",
+                "n_cluster_1": "Number of classes using 1st graph",
+                "n_cluster_2": "Number of classes using 2nd graph",
+                "n_copies": "Number of graphs in each class",
+                "diag_filter": "Threshold to ignore lower persistence points",
+                "dim0wt": "Weight of persistence dimension 0 kernel matrix", 
+                "dim1wt": "Weight of persistence dimension 1 kernel matrix",
+                "dim2wt": "Weight of persistence dimension 2 kernel matrix"
+            }, 
         "parameters": [
             {
                 "v": 20,
                 "e": 40,
                 "cp": 0.1,
                 "wp": 0.05,
-                "n_cluster_1": 3,        # Number of classes using 1st graph
-                "n_cluster_2": 3,        # Number of classes using 2nd graph
+                "n_cluster_1": 3,       
+                "n_cluster_2": 3,       
                 "n_copies": 50,
                 "diag_filter": 0,
                 "dim0wt": 1.0,
@@ -57,15 +84,22 @@
             }
         ]
     },
-    "contact_network_single": {        # For single labelled synthetic contact networks
+    "contact_network_single": {       
+        "_comments": {
+                "description": "For single labelled synthetic contact networks",
+                "v": "Number of vertices",
+                "e": "Number of edges",
+                "g_i_params": "Parameters for the root graph of a class. [p, x_i, d_max, assort mixing or disassort mixing]",
+                "per": "Number of RE perturbations"
+            },
         "parameters": [
             {
-                "v": 50,                                    # Number of vertices
-                "e": 100,                                   # Number of edges
-                "g1_params": [0.7,0.5,5,"assort_mixing"],   # Parameters for the root graph of a class. [p, x_i, d_max, "assort_mixing"/"disassort_mixing"]
+                "v": 50,                                    
+                "e": 100,                                  
+                "g1_params": [0.7,0.5,5,"assort_mixing"],  
                 "g2_params": [0.7,0.5,5,"assort_mixing"],
                 "g3_params": [0.7,0.5,5,"assort_mixing"],
-                "per": 25,                                  # Number of RE perturbations
+                "per": 25,                         
                 "diag_filter": 0,
                 "dim0wt": 1.0,
                 "dim1wt": 1.0,
@@ -85,12 +119,19 @@
             }
         ]
     },
-    "contact_network_multi": {        # For single labelled synthetic contact networks
+    "contact_network_multi": {      
+        "_comments": {
+                "description": "For multi labelled synthetic contact networks",
+                "v": "Number of vertices",
+                "e": "Number of edges",
+                "g_i_params": "Parameters for the root graph of a class. [p, q, x_i, d_max, assort mixing or disassort mixing]",
+                "per": "Number of RE perturbations"
+            },
         "parameters": [
             {
-                "v": 20,
-                "e": 40,
-                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"],    # Parameters for the root graph of a class. [p, q, x_i, d_max, "assort_mixing"/"disassort_mixing"]
+                "v": 50,
+                "e": 100,
+                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"], 
                 "g2_params": [0.7,0.2,0.5,5,"assort_mixing"],
                 "g3_params": [0.7,0.2,0.5,5,"assort_mixing"],
                 "per": 25,
@@ -100,8 +141,8 @@
                 "dim2wt": 1.0
             },
             {
-                "v": 20,
-                "e": 40,
+                "v": 50,
+                "e": 100,
                 "g1_params": [0.7,0.2,0.5,5,"disassort_mixing"],
                 "g2_params": [0.7,0.2,0.5,5,"disassort_mixing"],
                 "g3_params": [0.7,0.2,0.5,5,"disassort_mixing"],
