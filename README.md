@@ -20,7 +20,9 @@
 2. `run_exp_real.py` will perform the classification task of RE vs CM or EWLS vs CM. The usage for this function is as follows :
    ```
    python run_exp_real.py dataset filepath exp_type num_perturb edge_swap time_swap diag_filter
-
+   ```
+   where
+   ```
    positional arguments:
      dataset      Name of the dataset funtion in parse_datasets.
      filepath     Path to the dataset file.
