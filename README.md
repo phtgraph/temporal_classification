@@ -11,4 +11,4 @@
 
 ## Contact Network Models and Random Temporal Graphs
 
-Add your graph classification parameters in the `config.json` file. 
+Add your graph classification parameters in the `config.json` file. Some sample parameters are added, with variable descriptions.
