@@ -1,0 +1,116 @@
+{
+    "random_exp_pure": {
+        "parameters": [
+            {
+                "v": 20,
+                "e": 40,
+                "cp": 0.1,
+                "wp": 0.05,
+                "n_cluster": 3,
+                "n_copies": 50,
+                "diag_filter": 0.01,
+                "dim0wt": 1.0,
+                "dim1wt": 0.5,
+                "dim2wt": 0.2
+            },
+            {
+                "v": 20,
+                "e": 40,
+                "cp": 0.2,
+                "wp": 0.1,
+                "n_cluster": 4,
+                "n_copies": 30,
+                "diag_filter": 0.05,
+                "dim0wt": 0.8,
+                "dim1wt": 0.7,
+                "dim2wt": 0.3
+            }
+        ]
+    },
+    "random_exp_mixed": {
+        "parameters": [
+            {
+                "v": 20,
+                "e": 40,
+                "cp": 0.1,
+                "wp": 0.05,
+                "n_cluster_1": 3,
+                "n_cluster_2": 3,
+                "n_copies": 50,
+                "diag_filter": 0.01,
+                "dim0wt": 1.0,
+                "dim1wt": 0.5,
+                "dim2wt": 0.2
+            },
+            {
+                "v": 20,
+                "e": 40,
+                "cp": 0.2,
+                "wp": 0.1,
+                "n_cluster_1": 4,
+                "n_cluster_2": 3,
+                "n_copies": 30,
+                "diag_filter": 0.05,
+                "dim0wt": 0.8,
+                "dim1wt": 0.7,
+                "dim2wt": 0.3
+            }
+        ]
+    },
+    "contact_network_single": {
+        "parameters": [
+            {
+                "v": 20,
+                "e": 40,
+                "g1_params": [0.7,0.5,5,"assort_mixing"],
+                "g2_params": [0.7,0.5,5,"assort_mixing"],
+                "g3_params": [0.7,0.5,5,"assort_mixing"],
+                "per": 25,
+                "diag_filter": 0.01,
+                "dim0wt": 1.0,
+                "dim1wt": 0.5,
+                "dim2wt": 0.2
+            },
+            {
+                "v": 20,
+                "e": 40,
+                "g1_params": [0.7,0.5,5,"assort_mixing"],
+                "g2_params": [0.7,0.5,5,"assort_mixing"],
+                "g3_params": [0.7,0.5,5,"assort_mixing"],
+                "per": 25,
+                "diag_filter": 0.01,
+                "dim0wt": 1.0,
+                "dim1wt": 0.5,
+                "dim2wt": 0.2
+            }
+        ]
+    },
+    "contact_network_multi": {
+        "parameters": [
+            {
+                "v": 20,
+                "e": 40,
+                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "g2_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "g3_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "per": 25,
+                "diag_filter": 0.01,
+                "dim0wt": 1.0,
+                "dim1wt": 0.5,
+                "dim2wt": 0.2
+            },
+            {
+                "v": 20,
+                "e": 40,
+                "g1_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "g2_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "g3_params": [0.7,0.2,0.5,5,"assort_mixing"],
+                "per": 25,
+                "diag_filter": 0.01,
+                "dim0wt": 1.0,
+                "dim1wt": 0.5,
+                "dim2wt": 0.2
+            }
+        ]
+    }
+}
